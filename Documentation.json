@@ -1,0 +1,576 @@
+{
+	"info": {
+		"_postman_id": "93f40451-733e-4181-8b76-4079dacfb666",
+		"name": "Users Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"uchenna prince\",\r\n    \"email\": \"uchennachieke111@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register User",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"uchenna prince\",\r\n    \"email\": \"uchennachieke111@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "304"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"130-LcD8oZ0RSElP644tqw+2/hFGVR0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 21:45:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User Created Successfully\",\n    \"result\": {\n        \"_id\": \"615b75f8fed3891308fe311d\",\n        \"password\": \"$2a$12$hQUi.VsCDyVLUyhUZs9LceDve54DJmBWCfRFrY8Y8kNLy3bOrgw7K\",\n        \"email\": \"uchennachieke111@gmail.com\",\n        \"name\": \"uchenna prince\",\n        \"createdAt\": \"2021-10-04T21:45:28.172Z\",\n        \"updatedAt\": \"2021-10-04T21:45:28.172Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Sign-In User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_Name\": \"uchenna\",\r\n    \"last_Name\": \"chieke\",\r\n    \"email\": \"uchennachieke@gmail.com\",\r\n    \"passsword\": \"123456\",\r\n    \"dob\": \"Nov-21-1989\",\r\n    \"age\": \"30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api-users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api-users",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create A User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"email\": \"uchennachieke111@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "313"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"139-WLts7YxH1dqkuo6FZ8utVhp8yPA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 22:10:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User Signed in Successfully\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVjaGVubmFjaGlla2UxMTFAZ21haWwuY29tIiwidXNlcklkIjoiNjE1YjdiZDIwY2FkOWIxYzc4MDY2ZWQ2IiwiaWF0IjoxNjMzMzg1NDQ2LCJleHAiOjE2MzMzODkwNDZ9.vlZ8G9oRtI-kqKpzARmTWnlPZs0Fd7WoHHK-vaYLH6U\",\n    \"userId\": \"615b7bd20cad9b1c78066ed6\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create User Wallet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"balance\": 1000,\r\n    \"user\": \"615b7bd20cad9b1c78066ed6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/wallet/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wallet",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Wallet",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"balance\": 1000,\r\n    \"user\": \"615b7bd20cad9b1c78066ed6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/wallet/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"wallet",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "188"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bc-3vZrL25Lr9qjYqBtV5Brbh0wm5I\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 22:18:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Successful operation\",\n    \"data\": {\n        \"_id\": \"615b7d9b0cad9b1c78066ed7\",\n        \"balance\": 0,\n        \"createdAt\": \"2021-10-04T22:18:03.462Z\",\n        \"updatedAt\": \"2021-10-04T22:18:03.462Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get A User Balance",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/wallet/balance/615b7bd20cad9b1c78066ed6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wallet",
+						"balance",
+						"615b7bd20cad9b1c78066ed6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get A User Balance",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/wallet/balance/615b7bd20cad9b1c78066ed6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"wallet",
+								"balance",
+								"615b7bd20cad9b1c78066ed6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "69"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"45-x4ssYrYOzZv2Qn9P5ypanuJvFzg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 22:22:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Successful operation\",\n    \"data\": {\n        \"balance\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Credit User Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 100,\r\n    \"type\": \"credit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/wallet/initiateTransaction/615b7bd20cad9b1c78066ed6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wallet",
+						"initiateTransaction",
+						"615b7bd20cad9b1c78066ed6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Credit User Account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 100,\r\n    \"type\": \"credit\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/wallet/initiateTransaction/615b7bd20cad9b1c78066ed6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"wallet",
+								"initiateTransaction",
+								"615b7bd20cad9b1c78066ed6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "190"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"be-3cw6O8Z9cyNajQp7h3/AWqrwQKM\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 22:27:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Successful operation\",\n    \"data\": {\n        \"_id\": \"615b7d9b0cad9b1c78066ed7\",\n        \"balance\": 100,\n        \"createdAt\": \"2021-10-04T22:18:03.462Z\",\n        \"updatedAt\": \"2021-10-04T22:27:57.386Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Debit User Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"debit\",\r\n    \"amount\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/wallet/initiateTransaction/615b7bd20cad9b1c78066ed6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wallet",
+						"initiateTransaction",
+						"615b7bd20cad9b1c78066ed6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Debit User Account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"debit\",\r\n    \"amount\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/wallet/initiateTransaction/615b7bd20cad9b1c78066ed6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"wallet",
+								"initiateTransaction",
+								"615b7bd20cad9b1c78066ed6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "189"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bd-9ETEkmxehjLIBk0cEVMBx7BQX8o\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 22:31:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Successful operation\",\n    \"data\": {\n        \"_id\": \"615b7d9b0cad9b1c78066ed7\",\n        \"balance\": 80,\n        \"createdAt\": \"2021-10-04T22:18:03.462Z\",\n        \"updatedAt\": \"2021-10-04T22:31:28.410Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	]
+}
